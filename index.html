@@ -1,72 +1,104 @@
 <html>
     <head>
-
         <title>Wei Du - Home Page</title>
         <style type="text/css">
             body {
-                background-color: #fdf6e3;
-                margin-top: 13%;
-                margin-left: 20%;
-                margin-right: 20%;
-                font-family: Georgia;
-                text-align: center;
+                background-color: #ffffff;
+                margin-left: 23vw;
+                margin-right: 23vw;
             }
 
-            h1 {
-                font-size: 40px;
+            a {
+                color: black;
+                text-decoration: none;
             }
-                        
-            .avatar {
-                vertical-align: middle;
-                width: 170px;
-                height: 170px;
-                margin-left: 20%;
-                margin-right: 20%;
-                border-radius: 50%;
+            .content {
+                margin-top: 5%;
+                text-align: justify;
+            }
+            name {
+                font-size: 2.5vw;
+                font-family: Helvetica;
+                font-weight: bold;
+                color: black;
+                margin-right: 15vw;
+            }
+            ct {
+                font-size: 1vw;
+                font-family: Helvetica;
+                font-weight: bold;
+                margin-left: 2vw;
+                margin-right: 0;
+            }
+
+            .intro {
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-left: 32%;
+                text-align: justify;
+                font-size: 1vw;
+                font-family: Georgia;
+            }
+
+            #hp  {
+                float: left;
+            }
+
+            hr {
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom:3%;
+                color: #F6F6F6;
             }
 
             .quote {
-                margin-top: 3%;
-                font-size: 40px;
-                font-family: Marker Felt Thin;
-                color: #2aa198;
-            }
-
-            info {
-                font-size: 30px;
-                font-family: American Typewriter;
-                color:black;
+                font-size: 3.2vw;
+                font-family: Georgia;
+                color: #184fb5;
+                text-align: center;
+                margin-top: 20%;
             }
 
             .footer {
-				margin-top: 15%;
-                left: 0px;
+                margin-top: 30%;
                 width: 100%;
                 text-align: center;
-                font-family: Hiragino Sans WO;
-                font-size: 12px;
+                font-family: Georgia;
+                font-size: 0.8vw;
             }
         </style>
     </head>
 
-    <body>
-        <img src="pics/profile.png" alt="Avatar" class="avatar">
-        <h1>Wei  Du</h1>
-        <a href="mailto:ddwwzzyy@gmail.com"><img src="pics/email.png" style="width:25px; height:25px; margin-right:15px"></a>
-        <a href="https://github.com/wweedd"><img src="pics/github.png" style="width:25px; height:25px; margin-left:15px"></a>
-    </body>
+    <div class="content">
+        <name>WEI DU</name>
+        <ct><a href="index.html">Home</a></ct>
+        <ct><a href="aboutme.html">About Me</a></ct>
+        <ct><a href="research.html">Research</a></ct>
+        <ct><a href="pdf/cv.pdf#view=FitV">CV</a></ct>
+        <ct><a href="contact.html">Contact</a></ct>
+        <hr></hr>
+    </div>
 
 
-    <div class="quote"> "Any Motion Planning" </div>
+    <img src="pics/profile.png" alt="" width=30%, height=26%, id="hp"/>
 
-    <info>
-        <br>
-        <a href="aboutme.html" style="color:black">About Me</a>
-        <br> <br>
-        <a href="pdf/cv.pdf#zoom=100" style="color:black">Resume</a>
-        <br> <br>
-        <a href="research.html" style="color:black">Research</a>
-    </info>
+
+    <div class="intro"> 
+        I am a roboticist working with 
+        <a href="http://www.cs.cmu.edu/~maxim/" style="color:#033270">Prof. Maxim Likhachev</a>
+        at the 
+        <a href="http://www.sbpl.net" style="color:#033270">Search-based Planning Lab</a> (SBPL)
+        of Robotics Institute, Carnegie Mellon University.
+        Prior to CMU, I was an undergaute student advised by 
+        <a href="http://homepage.hit.edu.cn/liuyingxiang"style="color:#033270">Prof. Yingxiang Liu</a> 
+        at the <a href="http://homepage.hit.edu.cn/liuyingxiang" style="color:#033270"> State Key Laboratory of Robotics and System</a>, Harbin Institute of Technology.
+        <br></br>
+        <br></br>
+        Currently, I am dedicated to designing advanced motion planners for robot navigation and manipulation. 
+        Specifically, I am working on the intersection between learning and planning algoirthms.
+    </div> 
+
+    <div class="quote"> "Any-Motion Planning" </div>
 
     <div class="footer">
         <p>&copy; Copyright 2019. Wei Du. All Rights Reserved.</p>

@@ -3,40 +3,113 @@
         <title>Wei Du - Research</title>
         <style type="text/css">
             body {
-                background-color: #fdf6e3;
-                margin-top: 7%;
-                margin-left: 20%;
-                margin-right: 20%;
-                font-family: Georgia;
+                background-color: #ffffff;
+                margin-left: 23vw;
+                margin-right: 23vw;
                 text-align: justify;
             }
             .footer {
-                position:absolute;
-                bottom: 25px;
-                left: 0px;
                 width: 100%;
                 text-align: center;
-                font-family: Hiragino Sans WO;
-                font-size: 12px;
+                font-family: Georgia;
+                font-size: 0.8vw;
             }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            .content {
+                margin-top: 5%;
+                text-align: justify;
+            }
+            name {
+                font-size: 2.5vw;
+                font-family: Helvetica;
+                font-weight: bold;
+                color: black;
+                margin-right: 15vw;
+            }
+            ct {
+                font-size: 1vw;
+                font-family: Helvetica;
+                font-weight: bold;
+                margin-left: 2vw;
+                margin-right: 0;
+            }
+            p {
+                margin-left: 2vw;
+                font-size: 1vw;
+                font-family: Georgia;
+                text-align: justify;
+            }
+            h3 {
+                font-size: 1vw;
+                font-family: Georgia;
+                font-weight: bold;
+            }
+            ctvideo{
+                margin-right:10vw;
+                margin-left:10vw;
+            }
+
         </style>
     </head>
 
-    <body>
-        <h2>Soft Duplicate Detection:</h2>
-        <p style="font-size: 18px"><b>Brief: </b>For search-based motion planning in continuous space, there are no states that are exactly the same.
-        To this end, we exploit <i>soft duplicate detection</i> to help prioritize the expansion of states, thus trying to avoid wasting resources expanding states that do little contribution to the search.</p>
-        <p><b>Wei Du</b>, Sungkyun Kim, Oren Salzman and Maxim Likhachev, <i><b>"Escaping Local Minima in Search-Based Planning using Soft Duplicate Detection"</b></i>, Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2019</p>
-        <p><a href="pdf/duplicate.pdf#zoom=100" style="color:black">PDF</a></p>
+    <div class="content">
+        <name>WEI DU</name>
+        <ct><a href="index.html">Home</a></ct>
+        <ct><a href="aboutme.html">About Me</a></ct>
+        <ct><a href="research.html">Research</a></ct>
+        <ct><a href="pdf/cv.pdf#view=FitV">CV</a></ct>
+        <ct><a href="contact.html">Contact</a></ct>
+        <hr></hr>
+    </div>
 
-        <h2>Multi-Resolution A*:</h2>
-        <p style="font-size: 18px"><b>Brief: </b>Considering search-based motion planning on large scale or high dimensional domain. Planning in highly discretized space requires a lot of computation resources whereas in low resolution sacrifices the completeness of algorithms. So why not plan with multiple resolutions simultaneously?</p>
-        <p><b>Wei Du</b>, Fahad Islam and Maxim Likhachev, <i><b>"Multi-Resolution A*"</b></i>, (under review)</p>
-        <p><a href="pdf/MRA.pdf#zoom=100" style="color:black">PDF</a></p>
+
+    <body>
+        <h1 ALIGN=LEFT>Papers & Projects</h1>
+        <h3>Soft Duplicate Detection:</h3>
+        <p><b>Brief: </b>
+        For search-based motion planning with kino-dynamic constraints, it is non-trivial to sovle the Boundary Value Problems (BVP) in order to have actions start and end in the center of a discretized unit.
+        So why not search in continuous space?
+        </p>
+        <p><b>Wei Du</b>, Sungkyun Kim, Oren Salzman and Maxim Likhachev, <i><b>"Escaping Local Minima in Search-Based Planning using Soft Duplicate Detection"</b></i>, Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2019.
+        <a href="pdf/duplicate.pdf#zoom=100" style="color:#033270">&nbsp;&nbsp;&nbsp;PDF</a></p>
+        <br/>
+
+        <h3>Multi-Resolution A*:</h3>
+        <p><b>Brief: </b>
+            Search-based Planning in highly discretized space requires a lot of computation resources whereas in low resolution sacrifices the completeness of algorithms.
+            So why not plan with multiple resolutions simultaneously?
+        </p>
+        <p><b>Wei Du</b>, Fahad Islam and Maxim Likhachev, <i><b>"Multi-Resolution A*"</b></i>, (under review)
+        <a href="pdf/MRA.pdf#zoom=100" style="color:#033270">&nbsp;&nbsp;&nbsp;PDF</a></p>
+        <br/>
+
+        <h3>Walker -- Navigation & Grasping:</h3>
+        <p><b>Brief: </b>
+        In this project, the Walker robot is navigating in an indoor dynamic scenario to a reach a table and grasp an object on it.
+        Only <i>one odometry, one RealSense Depth Camera, and one RPLidar on the base</i> are in use.<br/> 
+        <ctvideo><video width="500" height="300" controls id="hp">
+            <source src="videos/navigation.mp4" type=video/mp4>
+        </video></ctvideo>
+        </p><br/>
+
+        <h3>Walker -- Conveyor:</h3>
+        <p><b>Brief: </b>
+        In this project, the Walker robot is supposed to grasp dynamic objects from the conveyor.
+        On the perception side, real-time pose and speed of target is computed.
+        On planning side, given target's pose and speed, an estimation of goal position is calculated and planned for.
+        The only sensor in use is the <i>RealSense Depth Camera</i>, which is mounted on the top of Walker's head.<br/>
+        <ctvideo><video width="500" height="300" controls id="hp">
+            <source src="videos/conveyor.mp4" type=video/mp4>
+        </video></ctvideo>
+        </p><br/>
+
 
     </body>
 
     <div class="footer">
-        <p>&copy; Copyright 2019. Wei Du. All Rights Reserved.</p>
+        &copy; Copyright 2019. Wei Du. All Rights Reserved.
     </div>
 </html>
