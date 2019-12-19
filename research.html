@@ -6,7 +6,7 @@
                 background-color: #ffffff;
                 margin-left: 23vw;
                 margin-right: 23vw;
-                text-align: justify;
+                text-align: center;
             }
             .footer {
                 width: 100%;
@@ -39,11 +39,6 @@
                 margin-right: 0;
             }
 
-            #hp  {
-                float: center;
-                margin-right: 15%;
-                margin-left: 15%;
-            }
 
             p {
                 margin-left: 2vw;
@@ -55,6 +50,7 @@
                 font-size: 1vw;
                 font-family: Georgia;
                 font-weight: bold;
+                text-align:left;
             }
             hr {
                 margin-right: auto;
@@ -103,12 +99,11 @@
         <h3>Walker -- Navigation & Grasping:</h3>
         <p><b>Brief: </b>
         In this project, the Walker robot is navigating in an indoor dynamic scenario to a reach a table and grasp an object on it.
-        Only <i>one odometry, one RealSense Depth Camera, and one RPLidar on the base</i> are in use.<br/> 
-        <video width="500" height="300" controls id="hp">
+        Only <i>one odometry, one RealSense Depth Camera, and one RPLidar on the base</i> are in use.
+        </p>
+        <video width="500" height="300" controls>
             <source src="videos/navigation.mp4" type=video/mp4>
         </video>
-        </p>
-        <br/>
         <hr></hr>
 
         <h3>Walker -- Conveyor:</h3>
@@ -116,13 +111,12 @@
         In this project, the Walker robot is supposed to grasp dynamic objects from the conveyor.
         On the perception side, real-time pose and speed of target is computed.
         On planning side, given target's pose and speed, an estimation of goal position is calculated and planned for.
-        The only sensor in use is the <i>RealSense Depth Camera</i>, which is mounted on the top of Walker's head.<br/>
-        <video width="500" height="300" controls id="hp">
+        The only sensor in use is the <i>RealSense Depth Camera</i>, which is mounted on the top of Walker's head.
+        </p>
+        <video width="500" height="300" controls>
             <source src="videos/conveyor.mp4" type=video/mp4>
         </video>
-        </p><br/>
-
-
+        <hr></hr>
     </body>
 
     <div class="footer">
